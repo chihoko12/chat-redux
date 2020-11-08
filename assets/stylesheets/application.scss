@@ -56,7 +56,7 @@ body {
 }
 
 //  Column 3/3
-.channels-container {
+.channel-container {
   display: flex;
   flex-direction: column;
   width: calc(100% - 290px);
@@ -73,10 +73,10 @@ body {
 }
 
 .channel-title > span {
-  font-weight: 600px;
+  font-weight: 600;
 }
 
-.channels-container {
+.channel-content {
   padding: 20px 20px 0 28px;
   box-sizing: border-box;
   height: 100%;

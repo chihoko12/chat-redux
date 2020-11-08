@@ -11,7 +11,7 @@ export function fetchMessages(channel) {
   const promise = fetch(url).then(response => response.json());
 
   return {
-    type: 'FETCH_MESSAGES',
+    type: FETCH_MESSAGES,
     payload: promise // will be reloaded by redux-promise
   };
 }
@@ -29,12 +29,12 @@ export function createMessage(channel, author, content) {
   }).then(r => r.json());
 
   return {
-    type: 'MESSAGE_POSTED',
+    type: MESSAGE_POSTED,
     payload: promise // will be reloaded by redux-promise
   };
 }
 
-export function selectedChannel(channel) {
+export function selectChannel(channel) {
   return {
     type: CHANNEL_SELECTED,
     payload: channel

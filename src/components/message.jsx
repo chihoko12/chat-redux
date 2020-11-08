@@ -7,12 +7,12 @@ const Message = (props) => {
   return (
     <div className="message-container">
       <i className="author">
-          <span>{author}</span>
-          <small>{time}</small>
+        <span>{author}</span>
+        <small>{time}</small>
       </i>
-        <p>{content}</p>
+      <p>{content}</p>
     </div>
   );
-}
+};
 
 export default Message;
