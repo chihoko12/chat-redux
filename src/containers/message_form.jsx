@@ -6,7 +6,7 @@ import { createMessage } from '../actions/index';
 class MessageForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {value: ''};
+    this.state = { value: '' };
   }
 
   componentDidMount() {
@@ -20,7 +20,7 @@ class MessageForm extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.createMessage(this.props.selectedChannel, this.props.currentUser, this.state.value);
-    this.setState({ value: '' }); //Reset message input
+    this.setState({ value: '' }); // Reset message input
   }
 
   render() {
